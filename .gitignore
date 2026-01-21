@@ -12,8 +12,13 @@ ENV/
 # Data files (too large for git)
 data/
 *.zip
-*.csv
-*.txt
+data/**/*.csv
+data/**/*.txt
+
+# But keep config files
+!requirements.txt
+!*.toml
+!*.json
 
 # IDE
 .vscode/
